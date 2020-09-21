@@ -1,0 +1,9 @@
+package JogoDaVelho;
+
+public class Main {
+    public static void main(String[] args) {
+        JogoDaVelha jg = new JogoDaVelha();
+        jg.JogoDvelha();
+    }
+    
+}
