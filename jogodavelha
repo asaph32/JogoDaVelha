@@ -1,0 +1,33 @@
+package JogoDaVelho;
+
+import java.util.Scanner;
+public class JogoDaVelha {
+    Scanner teclado = new Scanner(System.in);
+    public int jogo;
+
+    public int getJogo() {
+        return this.jogo;
+    }
+    public void setJogo(int j) {
+        this.jogo=j;
+    }
+    public void JogoDvelha() {
+        int[][] l = new int[3][3];
+        int i;
+        int j;
+        for(i=0;i<3;i++) {
+            for(j=0;j<3;j++) {
+                System.out.println("1 para X e 2 para O ("+(i+1)+","+(j+1)+")");
+                l[i][j]=Integer.parseInt(teclado.nextLine());
+            }
+        }
+        for(i=0;i<3;i++) {
+            for(j=0;j<3;j++) {
+                System.out.print(l[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+    
+    
+}
